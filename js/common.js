@@ -1,5 +1,10 @@
-$(".accordion li ul").hide();
-$("button").click(function(){
-  var index = $("button").index(this);
-  $(".accordionChild"+index).slideToggle();
+$(".menu-icon").click(function(){
+  $(".menu").toggleClass("open-menu");
 });
+
+$(".menu li").click(function(){
+  $(".sub-menu li").toggleClass("open-menu");
+});
+//$(".menu-icon").click(function(){
+//  $(".menu").toggleClass("open-menu");
+//});
