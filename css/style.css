@@ -1,6 +1,7 @@
 .wrap {
-  width: 960px;
+  width:100%;
   margin: auto;
+  box-sizing: border-box;
 }
 .navigation {
   box-shadow: 0 1px 5px 0 #ccc;
@@ -13,7 +14,6 @@
 .header-icon a img {
   width: 100px;
   height: auto;
-  padding: 10px 0;
   box-sizing: border-box;
 }
 .menu {
@@ -81,8 +81,14 @@
   padding: 20px 10px;
   box-sizing: border-box;
 }
+@media only screen and (min-width: 769px) {
+  .wrap {
+    width: 100%;
+    margin: auto;
+  }
+}
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
   body {
 /*    background: lightblue;*/
   }
@@ -93,7 +99,9 @@
   .navigation {
     box-shadow: 0 1px 5px 0 #ccc;
     text-align: right;
-    padding: 0 0 10px 0;
+  }
+  .sample {
+    padding: 15px 0;
   }
   .menu {
     display: none;
@@ -121,7 +129,6 @@
   .menu-icon img{
     display: inline-block;
     width: 70px;
-    margin: 5px 0 0;
   }
   .sub-menu {
     text-align: center;
